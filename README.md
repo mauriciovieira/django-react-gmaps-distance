@@ -4,6 +4,10 @@ This project is an example of Django and React using Docker. It features a dista
 
 The skeleton was generated with [cookiecutter-react-django](https://github.com/ohduran/cookiecutter-react-django)
 
+<img width="1833" alt="Django_React_Gmaps_Distance" src="https://user-images.githubusercontent.com/95258/93455920-5ceb9980-f8b3-11ea-8ed9-9ce37b9f697c.png">
+
+
+
 ## Setup
 
 ### Docker
