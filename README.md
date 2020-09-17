@@ -17,13 +17,13 @@ Install docker and docker-compose
 ### Google Maps
 
 1. Copy `frontend/.env.example` to `frontend/.env`
-2. Insert a valid google maps API key of `frontend/.env`
+2. Insert a valid google maps API key in `frontend/.env`
 
 ## Development
 
 To run the application locally, run `make run`. This will build the images and run locally. After that, open https://localhost
 
-### Test coverage
+### Tests
 
 To run django tests:
 
