@@ -8,4 +8,4 @@ class TestDistanceCalculation(unittest.TestCase):
         salvador = [-12.9768177, -38.4569869]
         km = 3134.310335004333
 
-        self.assertEqual( distance(*buenos_aires, *salvador), km)
+        self.assertEqual(distance(*buenos_aires, *salvador), km)
