@@ -86,7 +86,7 @@ export default function MapContainer(props) {
         ))}
       </GoogleMap>
 
-      <Badge outline theme="primary" className="m-2 distance">
+      <Badge outline theme="primary" className="m-2 distance" id="distance">
         {distance}
       </Badge>
     </>

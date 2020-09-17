@@ -40,7 +40,7 @@ function App() {
         </Row>
         <Row>
           <Col>
-            <Button onClick={() => {
+            <Button id="reset" onClick={() => {
               setClear(() => true);
             }}> Reset
             </Button>
