@@ -31,12 +31,6 @@ To run django tests:
 make django-test
 ```
 
-To run react tests:
-
-```
-make react-test
-```
-
 ## Deployment
 
 You can check how to deploy your app to Heroku [here](https://github.com/ohduran/cookiecutter-react-django#deploy-to-heroku)
