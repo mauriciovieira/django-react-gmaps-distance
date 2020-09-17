@@ -1,10 +1,10 @@
-from contrib.views import char_count
+from contrib.views import markers
 from django.contrib import admin
 from django.urls import path, re_path
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("char_count", char_count, name="char_count"),
+    path("markers", markers, name="markers"),
     re_path(".*", TemplateView.as_view(template_name="index.html")),
 ]

@@ -1,7 +1,12 @@
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+
+import json
+from .distance_calculation import calculate
 
 
-def char_count(request):
-    text = request.GET.get("text", "")
+@csrf_exempt
+def markers(request):
+    markers = json.loads(request.body)
 
-    return JsonResponse({"count": len(text)})
+    return JsonResponse({"distance": calculate(markers)})
