@@ -16,8 +16,9 @@ class TestMarkers(APITestCase):
                 "time": "2020-09-17T09:58:36.249Z",
             },
         ]
-        request = self.client.post("/markers", payload, format="json")
+        response = self.client.post("/markers", payload, format="json")
 
         # Assert
-        self.assertEqual(request.status_code, 200)
-        self.assertIn('{"distance": "13.69 km"}', str(request.content))
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.headers["Content-Type"], "application/json")
+        self.assertEqual(response.json()["distance"], "13.69 km")
