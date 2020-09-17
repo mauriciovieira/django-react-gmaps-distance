@@ -14,7 +14,7 @@ migrate:
 	docker-compose run --rm django python manage.py migrate
 
 django-test:
-	docker-compose run --rm django pytest
+	docker-compose run --rm django python manage.py test
 
 react-test:
 	docker-compose run --rm react yarn test

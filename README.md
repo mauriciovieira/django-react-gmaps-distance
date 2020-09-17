@@ -25,13 +25,13 @@ To run the application locally, run `make run`. This will build the images and r
 
 ### Test coverage
 
-To run the tests, check your test coverage, and generate a coverage report:
+To run django tests:
 
 ```
 make django-test
 ```
 
-To run react tests
+To run react tests:
 
 ```
 make react-test
